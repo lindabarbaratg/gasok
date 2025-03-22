@@ -4,6 +4,16 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import os
 import time
+import string
+
+
+def random_string(count):
+    string.ascii_letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+    return "".join(random.choice(string.ascii_letters) for x in range(count))
+
+    # return random.choice(string.ascii_letters)
+
 
 # Fungsi membaca CSV dengan rentang baris tertentu
 def read_csv_range(filename, start, end):
@@ -12,12 +22,12 @@ def read_csv_range(filename, start, end):
     return rows
 
 # Rentang data yang diproses (misal dari baris 1 sampai 50)
-start_row = 5600  # Baris pertama (0-based index)
-end_row = 5900  # Baris terakhir yang ingin diproses
+start_row = 2800  # Baris pertama (0-based index)
+end_row = 2950  # Baris terakhir yang ingin diproses
 
 # Deklarasi akun tunggal
-email = "MehakaRazak"
-password = "@@Dayungh332"
+email = "MubashiroZamant"
+password = "@@luncurrr234"
 
 # Baca judul video sesuai rentang yang diinginkan
 titles = read_csv_range("data.csv", start_row, end_row)
@@ -38,14 +48,14 @@ time.sleep(5)
 # Proses upload
 for title in titles:
     modif_kata = title.replace(' ', '_')
-    kw = f'{title} Onlyfans Leaked - Update Files ++ Download'
+    kw = f'{title} Leaked OnlyFans Update Pics & Video {random_string(5)}'
 
     konten = f'''
-    17 minutes ago - Access {title} Onlyfans Leaked content & files Update.
+    21 minutes ago - Access {title} Leaked Onlyfans Files Update 2025.
 
     LINK ⏩⏩ https://clipsmu.com/{modif_kata}
 
-    2025 Updated! Today, you'll be able to download and preview all content from {title} in just a few clicks.
+    2025 Updated! Today, {title} Leaked you'll be able to download and preview all content from {title} Onlyfans in just a few clicks.
     '''
 
     video_path = os.path.abspath("video/video.mp4")
